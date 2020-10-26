@@ -133,5 +133,4 @@ public class FileWorkTest {
         assertEquals(expected, actual);
         System.out.println("Test 6. Number of words = " + actual);
     }
-
 }

@@ -17,8 +17,7 @@ public class FileWork {
      */
     public static int numOfWordsInAFile(File f) {
         int countWords = -1;
-        try {
-            Scanner fscan = new Scanner(f);
+        try (Scanner fscan = new Scanner(f)) {
             countWords=0;
             while (fscan.hasNext()) {
                 fscan.next();
